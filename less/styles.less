@@ -20,6 +20,10 @@ th {
   background-color: gray;
 }
 
+a:hover{
+  background-color: #CCCCFF;
+}
+
 #bottom {
   text-align: center;
   font-size: 20px;
@@ -43,7 +47,7 @@ th {
 }
 
 .html-start {
-  height: 350px;
+  height: 400px;
 }
 
 .head, .body {
@@ -83,10 +87,6 @@ th {
   margin: 0 20px;
 }
 
-.styling {
-  margin: 20px;
-}
-
 .description {
   padding: 10px 0;
   font-size: 18px;
@@ -96,10 +96,21 @@ th {
   padding: 0 20px;
 }
 
-.css-styling p {
-  color: red;
-  font-family: courier;
-  font-size: 24px;
+.css-styling {
+  p {
+    color: red;
+    font-family: courier;
+    font-size: 24px;
+  }
+  ul {
+    p {
+    color: #000;
+    font-size: 20px;
+    }
+    li {
+      list-style: none;
+    }
+  }
 }
 
 #example-id {
@@ -112,4 +123,60 @@ th {
   background-color: #3D3D5C;
   margin: 5px 0;
 }
- .test{}
+.no-margin {
+  border: 1px solid red;
+}
+
+.margin {
+  border: 1px solid blue;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.margin-short {
+  border: 1px solid green;
+  margin: 50px 10px;
+}
+
+.no-padding {
+  border: 1px solid red;
+}
+
+.padding {
+  border: 1px solid blue;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.padding-short {
+  border: 1px solid green;
+  padding: 50px 10px;
+}
+
+.css-colors {
+  span {
+    display: inline-block;
+  }
+  .hex{
+    background: #ff0000;
+  }
+  .rgb{
+    background: rgb(255, 0, 0);
+  }
+  .rgba{
+    background: rgba(255, 0, 0, 0.5);
+  }
+  .hsl{
+    background: hsl(0, 100%, 50%);
+  }
+  .hsla{
+    background: hsla(0, 100%, 50%, 0.5);
+  }
+  .color-name{
+    background: red;
+  }
+
+
+}

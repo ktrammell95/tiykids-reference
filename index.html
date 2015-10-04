@@ -9,7 +9,7 @@
 
 <body>
   <div class="html">
-    <h1 class="main-title">Building a Website with HTML</h1>
+    <h1 class="main-title">Building a Website with HTML and CSS</h1>
 
     <div class="section html-start">
       <h2 class="title">Creating the HTML File</h2>
@@ -314,150 +314,270 @@
         <span class="text">Prevents the lines within a cell from being broken to fit</span>
       </div>
     </div> <!--ends tables -->
-  </div><!-- ends HTML-->
 
-  <div class="styling">
-    <h1 class="main-title">Applying Styling</h1>
+    <div class="styling">
+      <h1 class="main-title">Applying Styling</h1>
 
-    <div class="section inline-styles">
-      <h2 class="title">Inline Styles</h2>
-      <span class="description">Inline styling is useful for applying a unique style to a single HTML element</span>
-      <div>
-        <span class="tags">&lt;span background-color="#E0CCF5"&gt;</span>
-        <span class="text" style="background-color:#E0CCF5">Sets the background color, using name or hex value</span>
-      </div>
-      <div>
-        <span class="tags">&lt;span style="color:blue"&gt;</span>
-        <span class="text" style="color:blue">Sets the text color, using name or hex value</span>
-      </div>
-      <div>
-        <span class="tags">&lt;p align="left"&gt;</span>
-        <span class="text">
-          <p align="left">Aligns a paragraph to the left (default).</p>
-        </span>
-      </div>
-      <div>
-        <span class="tags">&lt;p align="center"&gt;</span>
-        <span class="text">
-          <p align="center">Aligns a paragraph to the center.</p>
-        </span>
-      </div>
-      <div>
-        <span class="tags">&lt;p align="right"&gt;</span>
-        <span class="text">
-          <p align="right">Aligns a paragraph to the right.</p>
-        </span>
-      </div>
-    </div> <!--ends inline-styles -->
-
-    <div class="section internal-css">
-      <div class="internal">
-        <h2 class="title">Internal Styling (Internal CSS)</h2>
-        <span class="description">An internal style sheet can be used to define a common style for all HTML elements on a page.</span>
-        <span class="description">Internal styling is defined in the <b>&lt;head&gt;</b> section of an HTML page, using a <b>&lt;style&gt;</b> element</span>
-        <div class="head">
-          <span>&lt;head&gt;</span>
-          <div class="meta">
-            <span>&lt;meta&gt;  &lt;/meta&gt;</span>
-          </div>
-          <div class="style-tag">
-            <span>&lt;style&gt;</span>
-            <span class="internal-style">body {background-color: #E0CCF5;}</span>
-            <span class="internal-style">h1 {color:blue}</span>
-            <span class="internal-style">p {color:green}</span>
-            <span>&lt;/style&gt;</span>
-          </div>
-          <span>&lt;/head&gt;</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="section css">
-      <div class="css-styling">
-        <h2 class="title">External Styling (External CSS)</h2>
-        <span class="description">External style sheet are ideal when the style is applied to many pages.</span>
-        <span class="description">With external style sheets, you can change the look of an entire web site by changing one file.</span>
-        <span class="description">External styles are defined in an external CSS file, and then linked to in the &lt;head&gt; section of an HTML page.</span>
-        <div class="head">
-          <span>&lt;head&gt;</span>
-          <div class="meta">
-            <span>&lt;meta&gt;  &lt;/meta&gt;</span>
-          </div>
-          <div class="style-tag">
-            <span>&lt;style&gt;</span>
-            <span class="internal-style">&lt;link rel="stylesheet" href="styles.css&gt;</span>
-            <span>&lt;/style&gt;</span>
-          </div>
-          <span>&lt;/head&gt;</span>
+      <div class="section inline-styles">
+        <h2 class="title">Inline Styles</h2>
+        <span class="description">Inline styling is useful for applying a unique style to a single HTML element</span>
+        <div>
+          <span class="tags">&lt;span background-color="#E0CCF5"&gt;</span>
+          <span class="text" style="background-color:#E0CCF5">Sets the background color, using name or hex value</span>
         </div>
         <div>
-          <h3>Using Tags/Elements</h3>
-          <span class="description">Websites can be styled by targeting the tag/element.</span>
-          <span>
-            <span>p  {</span>
-            <span class="internal-style">color: red;</span>
-            <span class="internal-style">font-family: courier;</span>
-            <span class="internal-style">font-size: 12px;</span>
-            <span>}</span>
-            <p class="style-red">This is in a &lt;p&gt; and will turn red, use Courier font, and be 12px in size.</p>
+          <span class="tags">&lt;span style="color:blue"&gt;</span>
+          <span class="text" style="color:blue">Sets the text color, using name or hex value</span>
+        </div>
+        <div>
+          <span class="tags">&lt;p align="left"&gt;</span>
+          <span class="text">
+            <p align="left">Aligns a paragraph to the left (default).</p>
           </span>
         </div>
         <div>
-          <h3>Using Ids</h3>
-          <span class="description">Using Ids allows you to define a special style for one special element. Ids can only be used once.</span>
-          <span>&lt;p id="example-id"&gt;  &lt;/p&gt;</span>
-          <br>
-          <span>
-            <span>#example-id  {</span>
-            <span class="internal-style">color: blue;</span>
-            <span class="internal-style">text-transform: uppercase</span>
-            <span>}</span>
-            <span id="example-id">This is in a &lt;span&gt; with the id "example-id" and will turn blue and be uppercase.</span>
-          </span>
-          <hr>
-          <span class="description">Ids are also used to help the user jump around the page</span>
-          <span>
-            <span id="jump-to-bottom"><a href="#bottom">This is in a &lt;span&gt; with link to an ID that will jump us to the bottom of the page.</a> Don't worry there will be a link to bring you back.</span>
-
+          <span class="tags">&lt;p align="center"&gt;</span>
+          <span class="text">
+            <p align="center">Aligns a paragraph to the center.</p>
           </span>
         </div>
         <div>
-        <h3>Using Classes</h3>
-          <span class="description">Using Classes allows you to multiple areas of the site.</span>
-          <span>&lt;span class="example-class"&gt;  &lt;/span&gt;</span>
-          <br>
-          <span>
-            <span>.example-class {</span>
-            <span class="internal-style">color: pink;</span>
-            <span class="internal-style">background-color: #3D3D5C</span>
-            <span>}</span>
+          <span class="tags">&lt;p align="right"&gt;</span>
+          <span class="text">
+            <p align="right">Aligns a paragraph to the right.</p>
+          </span>
+        </div>
+      </div> <!--ends inline-styles -->
+
+      <div class="section internal-css">
+        <div class="internal">
+          <h2 class="title">Internal Styling (Internal CSS)</h2>
+          <span class="description">An internal style sheet can be used to define a common style for all HTML elements on a page.</span>
+          <span class="description">Internal styling is defined in the <b>&lt;head&gt;</b> section of an HTML page, using a <b>&lt;style&gt;</b> element</span>
+          <div class="head">
+            <span>&lt;head&gt;</span>
+            <div class="meta">
+              <span>&lt;meta&gt;  &lt;/meta&gt;</span>
+            </div>
+            <div class="style-tag">
+              <span>&lt;style&gt;</span>
+              <span class="internal-style">body {background-color: #E0CCF5;}</span>
+              <span class="internal-style">h1 {color:blue}</span>
+              <span class="internal-style">p {color:green}</span>
+              <span>&lt;/style&gt;</span>
+            </div>
+            <span>&lt;/head&gt;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section css">
+        <div class="css-styling">
+          <h2 class="title">External Styling (External CSS)</h2>
+          <span class="description">External style sheet are ideal when the style is applied to many pages.</span>
+          <span class="description">With external style sheets, you can change the look of an entire web site by changing one file.</span>
+          <span class="description">External styles are defined in an external CSS file, and then linked to in the &lt;head&gt; section of an HTML page.</span>
+          <div class="head">
+            <span>&lt;head&gt;</span>
+            <div class="meta">
+              <span>&lt;meta&gt;  &lt;/meta&gt;</span>
+            </div>
+            <div class="style-tag">
+              <span>&lt;style&gt;</span>
+              <span class="internal-style">&lt;link rel="stylesheet" href="styles.css&gt;</span>
+              <span>&lt;/style&gt;</span>
+            </div>
+            <span>&lt;/head&gt;</span>
+          </div>
+          <div class="css-tags">
+            <h3>Using Tags/Elements</h3>
+            <span class="description">Websites can be styled by targeting the tag/element.</span>
+            <span>
+              <span>p  {</span>
+              <span class="internal-style">color: red;</span>
+              <span class="internal-style">font-family: courier;</span>
+              <span class="internal-style">font-size: 12px;</span>
+              <span>}</span>
+              <p class="style-red">This is in a &lt;p&gt; and will turn red, use Courier font, and be 12px in size.</p>
+            </span>
+          </div>
+          <div class="css-ids">
+            <h3>Using Ids</h3>
+            <span class="description">Using Ids allows you to define a special style for one special element. Ids can only be used once.</span>
+            <span>&lt;p id="example-id"&gt;  &lt;/p&gt;</span>
             <br>
-            <span class="example-class">This is in a &lt;span&gt; with the class "example-class" and will turn pink and have a background color of #3D3D5C.</span>
-            <div class="example-class">This is in a &lt;div&gt; with the class "example-class" and will turn pink and have a background color of #3D3D5C.</div>
-          </span>
-        </div>
-        <div>
-          <h3>Margins</h3>
-          <span>The margin clears an area around an element (outside the border). The margin does not have a background color, and is completely transparent.</span>
-          <span>The top, right, bottom, and left margin can be changed independently using separate properties.</span>
-          <span>A shorthand margin property can also be used, to change all margins at once.</span>
-          <div>
+            <span>
+              <span>#example-id  {</span>
+              <span class="internal-style">color: blue;</span>
+              <span class="internal-style">text-transform: uppercase</span>
+              <span>}</span>
+              <span id="example-id">This is in a &lt;span&gt; with the id "example-id" and will turn blue and be uppercase.</span>
+            </span>
+            <hr>
+            <span class="description">Ids are also used to help the user jump around the page</span>
+            <span>
+              <span id="jump-to-bottom"><a href="#bottom">This is in a &lt;span&gt; with link to an ID that will jump us to the bottom of the page.</a> Don't worry there will be a link to bring you back.</span>
 
+            </span>
           </div>
-        </div>
-        <div>
-          <h3>Padding</h3>
-        </div>
-        <div>
-          <h3>Colors</h3>
-        </div>
-        <div>
-          <h3>Sizing</h3>
-        </div>
-        <span id="bottom"><a href="#jump-to-bottom">Click here to go back to IDs</a></span>
-      </div> <!-- ends css-styling-->
-    </div> <!-- ends css-->
-  </div> <!-- ends styling-->
+          <div class="css-classes">
+            <h3>Using Classes</h3>
+            <span class="description">Using Classes allows you to multiple areas of the site.</span>
+            <span>&lt;span class="example-class"&gt;  &lt;/span&gt;</span>
+            <br>
+            <span>
+              <span>.example-class {</span>
+              <span class="internal-style">color: pink;</span>
+              <span class="internal-style">background-color: #3D3D5C</span>
+              <span>}</span>
+              <br>
+              <span class="example-class">This is in a &lt;span&gt; with the class "example-class" and will turn pink and have a background color of #3D3D5C.</span>
+              <div class="example-class">This is in a &lt;div&gt; with the class "example-class" and will turn pink and have a background color of #3D3D5C.</div>
+            </span>
+          </div>
+          <div class="css-margin">
+            <h3>Margins</h3>
+            <span>The margin clears an area around an element (outside the border). The margin does not have a background color, and is completely transparent.</span>
+            <span>The top, right, bottom, and left margin can be changed independently using separate properties or changing multiple margins using shorthand.</span>
+            <span>The margin property can have from one to four values.</span>
+            <ul><p>margin: 5px 10px 15px 20px;</p>
+              <li>top margin is 5px</li>
+              <li>right margin is 10px</li>
+              <li>bottom margin is 15px</li>
+              <li>left margin is 20px</li>
+            </ul>
+            <ul><p>margin: 5px 10px 15px;</p>
+              <li>top margin is 25px</li>
+              <li>right and left margins are 10px</li>
+              <li>left margin is 15px</li>
+            </ul>
+            <ul><p>margin: 5px 10px</p>
+              <li>top and bottom margins are 5px</li>
+              <li>right and left margins are 10px</li>
+            </ul>
+            <ul><p>margin: 5px</p>
+              <li>all four margins are 5px</li>
+            </ul>
+            <div>
+              <div>
+                <div class="no-margin">This is a div with no specified margins.</div>
+                <div class="no-margin">This is a div with no specified margins.</div>
+              </div>
+              <div>
+                <div class="margin">
+                  <span>This is a div with specified margins. </span>
+                  <ul>
+                    <li>margin-top: 50px;</li>
+                    <li>margin-bottom: 50px;</li>
+                    <li>margin-right: 10px;</li>
+                    <li>margin-left: 10px;</li>
+                  </ul>
+                </div>
+                <div class="margin-short">
+                  <span>This is a div with specified margins written in shorthand. </span>
+                  <ul><li>margin: 50px 10px;</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="css-padding">
+            <h3>Padding</h3>
+            <span>The padding clears an area around an element (inside the border). The padding does not have a background color, and is completely transparent.</span>
+            <span>The top, right, bottom, and left padding can be changed independently using separate properties or changing multiple margins using shorthand.</span>
+            <span>The paddings property can have from one to four values.</span>
+            <ul><p>padding: 5px 10px 15px 20px;</p>
+              <li>top padding is 5px</li>
+              <li>right padding is 10px</li>
+              <li>bottom padding is 15px</li>
+              <li>left padding is 20px</li>
+            </ul>
+            <ul><p>padding: 5px 10px 15px;</p>
+              <li>top padding is 25px</li>
+              <li>right and left paddings are 10px</li>
+              <li>left padding is 15px</li>
+            </ul>
+            <ul><p>padding: 5px 10px</p>
+              <li>top and bottom paddings are 5px</li>
+              <li>right and left paddings are 10px</li>
+            </ul>
+            <ul><p>padding: 5px</p>
+              <li>all four paddings are 5px</li>
+            </ul>
+            <div>
+              <div>
+                <div class="no-padding">This is a div with no specified padding.</div>
+                <div class="no-padding">This is a div with no specified padding.</div>
+              </div>
+              <div>
+                <div class="padding">
+                  <span>This is a div with specified padding. </span>
+                  <ul>
+                    <li>padding-top: 50px;</li>
+                    <li>padding-bottom: 50px;</li>
+                    <li>padding-right: 10px;</li>
+                    <li>padding-left: 10px;</li>
+                  </ul>
+                </div>
+                <div class="padding-short">
+                  <span>This is a div with specified padding written in shorthand. </span>
+                  <ul><li>padding: 50px 10px;</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="css-colors">
+            <h3>Colors</h3>
+            <span>Colors in CSS can be specified by the following methods:
+              <ul>
+                <li>
+                  <span>Hexadecimal colors:</span>
+                  <span class="hex">#ff0000 (red)</span>
+                </li>
+                <li>
+                  <span>RGB colors:</span>
+                  <span class="rgb">rgb(255, 0, 0) (red)</span>
+                </li>
+                <li>
+                  <span>RGBA colors:</span>
+                  <span class="rgba">rgb(255, 0, 0, 0.5) (red 50% opacity)</span>
+                  </li>
+                <li>
+                  <span>HSL colors:</span>
+                  <span class="hsl">hsl(0, 100%, 50%) (red)</span>
+                </li>
+                <li>
+                  <span>HSLA colors:</span>
+                  <span class="hsla">hsla(0, 100%, 50%, 0.5) (red 50% opacity)</span>
+                </li>
+                <li>
+                  <span>Predefined/Cross-browser color names:</span>
+                  <span class="color-name">red</span>
+                </li>
+              </ul>
+            </span>
+            <ul>Color resources:
+              <li>
+                <a href="http://www.w3schools.com/cssref/css_colornames.asp">W3C Color Names</a>
+              </li>
+              <li>
+                <a href="http://www.w3schools.com/tags/ref_colorpicker.asp">W3C Color Picker</a>
+              </li>
+              <li>
+                <a href="http://www.colourlovers.com/">Colourlovers</a>
+              </li>
+              <li>
+                <a href="http://www.colorpicker.com/">Color picker</a>
+              </li>
+            </ul>
+          </div>
+          <div class="css-dimensions">
+            <h3>Dimensions</h3>
+          </div>
+          <span id="bottom"><a href="#jump-to-bottom">Click here to go back to IDs</a></span>
+        </div> <!-- ends css-styling-->
+      </div> <!-- ends css-->
+    </div> <!-- ends styling-->
+  </div><!-- ends HTML-->
 
   <footer>
   <span>Katherine Trammell <small>&copy;2015</small></span>
