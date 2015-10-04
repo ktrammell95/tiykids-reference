@@ -8,6 +8,22 @@ div {
 span {
   display: block;
 }
+table {
+  margin-top: 10px;
+  border: 1px solid;
+}
+th {
+  background-color: gray;
+}
+#bottom {
+  text-align: center;
+  font-size: 20px;
+}
+.left,
+.right {
+  float: left;
+  width: 49%;
+}
 .section {
   box-shadow: 0px 2px 13px 5px rgba(0, 0, 0, 0.75);
   width: 95%;
@@ -16,15 +32,11 @@ span {
   background-color: #ccc;
   clear: both;
 }
-table {
-  margin-top: 10px;
-  border: 1px solid;
-}
-th {
-  background-color: gray;
-}
 .html {
   margin: 0 0 0 20px;
+}
+.html-start {
+  height: 350px;
 }
 .head,
 .body {

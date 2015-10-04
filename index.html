@@ -25,18 +25,20 @@
             </div>
             <span>&lt;/head&gt;</span>
           </div>
+          <div class="body">
+            <span>&lt;body&gt;  &lt;/body&gt;</span>
+          </div>
+          <span>&lt;/html&gt;</span>
         </div>
       </div>
-      <div class="body">
-        <span>&lt;body&gt;  &lt;/body&gt;</span>
-        <span>&lt;/html&gt;</span>
+      <div class="right">
         <div>
           <span class="tags">&lt;!DOCTYPE html&gt;</span>
           <span class="text">All HTML documents must start with a type declaration</span>
         </div>
         <div>
           <span  class="tags">&lt;head&gt; &lt;/head&gt;</span>
-          <span class="text">Sets off the title and other information that isn’t displayed on the web page itself</span>
+          <span class="text">Sets off the title and other information that isn't displayed on the web page itself</span>
         </div>
         <div>
           <span class="tags">&lt;meta&gt; &lt;/meta&gt;</span>
@@ -406,11 +408,17 @@
           <span>&lt;p id="example-id"&gt;  &lt;/p&gt;</span>
           <br>
           <span>
-          <span>#example-id  {</span>
+            <span>#example-id  {</span>
             <span class="internal-style">color: blue;</span>
             <span class="internal-style">text-transform: uppercase</span>
             <span>}</span>
-            <p id="example-id">This is in a &lt;span&gt; with an id and will turn blue and be uppercase.</p>
+            <span id="example-id">This is in a &lt;span&gt; with the id "example-id" and will turn blue and be uppercase.</span>
+          </span>
+          <hr>
+          <span class="description">Ids are also used to help the user jump around the page</span>
+          <span>
+            <span id="jump-to-bottom"><a href="#bottom">This is in a &lt;span&gt; with link to an ID that will jump us to the bottom of the page.</a> Don't worry there will be a link to bring you back.</span>
+
           </span>
         </div>
         <div>
@@ -430,6 +438,12 @@
         </div>
         <div>
           <h3>Margins</h3>
+          <span>The margin clears an area around an element (outside the border). The margin does not have a background color, and is completely transparent.</span>
+          <span>The top, right, bottom, and left margin can be changed independently using separate properties.</span>
+          <span>A shorthand margin property can also be used, to change all margins at once.</span>
+          <div>
+
+          </div>
         </div>
         <div>
           <h3>Padding</h3>
@@ -440,6 +454,7 @@
         <div>
           <h3>Sizing</h3>
         </div>
+        <span id="bottom"><a href="#jump-to-bottom">Click here to go back to IDs</a></span>
       </div> <!-- ends css-styling-->
     </div> <!-- ends css-->
   </div> <!-- ends styling-->
